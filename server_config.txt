@@ -1,0 +1,3 @@
+
+#Mounting the Remote File System
+sudo sshfs -o allow_other user@xxx.xxx.xxx.xxx:/ /mnt/<local directory>
