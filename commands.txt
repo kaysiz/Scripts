@@ -1,0 +1,2 @@
+#how to remove ppa
+sudo add-apt-repository --remove ppa:<name of package>
