@@ -1,3 +1,8 @@
 
 #Mounting the Remote File System
-sudo sshfs -o allow_other user@xxx.xxx.xxx.xxx:/ /mnt/<local directory>
+  sudo sshfs -o allow_other user@xxx.xxx.xxx.xxx:/ /mnt/<local directory>
+#redirect http to https
+  - create a .htaccess file or edit one if it exists in the root of your project. Put the below lines and save.
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
