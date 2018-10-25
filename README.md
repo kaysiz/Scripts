@@ -1,2 +1,2 @@
 # Scripts
-A repository of scripts 
+If you do it more than once, write a script 
